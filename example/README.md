@@ -1,17 +1,23 @@
 # navlens_example
 
-A new Flutter project.
+A runnable demo of the [`navlens`](../) package.
 
-## Getting Started
+Shows off:
 
-This project is a starting point for a Flutter application.
+- a tabbed Home screen (Feed + Chat)
+- a `Home → Profile → Settings` push chain that matches the tree in the
+  NavLens spec
+- a Detail screen with buttons for `push`, `pushReplacement`,
+  `pushAndRemoveUntil` and `pop`
 
-A few resources to get you started if this is your first Flutter project:
+## Run
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+cd example
+flutter create .          # regenerates the native platform folders
+flutter pub get
+flutter run               # or: flutter run -d chrome | -d macos | ...
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tap the purple tree button in the bottom-right to open the NavLens
+inspector.

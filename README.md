@@ -25,7 +25,7 @@ Add to `pubspec.yaml`:
 ```yaml
 dependencies:
   navlens:
-    git: https://github.com/your-org/navlens.git
+    git: https://github.com/Morena96/navlens.git
 ```
 
 ## Two-line setup
